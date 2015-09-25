@@ -1,5 +1,5 @@
 <%@users.each do |user|%>
-<%debugger%>
+
 <%= user.name %><%= link_to "Add fakir", friendships_path(:friend_id => user), :method => :post%> <%= link_to "See friends", 'javascrpt:void(0);', :class => "see_friend_list", :id => user.id%>
 <div class = "show_friends"></div>
     <br>
