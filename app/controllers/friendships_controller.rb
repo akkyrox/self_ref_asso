@@ -8,4 +8,12 @@ class FriendshipsController < ApplicationController
     end
   end
 
+  def destroy
+    @user= User.find 2
+    @friendship = @user.friendships.where("id = ?", params[:id]).last
+    @friendship.delete
+    redirect_to :back
+    debugger
+  end
+
 end

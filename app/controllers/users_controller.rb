@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   end
 
   def show_friend_list
-    debugger
     @user = User.find(params[:user_id])
   end
 
