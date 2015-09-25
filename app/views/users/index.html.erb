@@ -1,0 +1,27 @@
+<%@users.each do |user|%>
+<%debugger%>
+<%= user.name %><%= link_to "Add fakir", friendships_path(:friend_id => user), :method => :post%> <%= link_to "See friends", 'javascrpt:void(0);', :class => "see_friend_list", :id => user.id%>
+<div class = "show_friends"></div>
+    <br>
+<%end%>
+
+<%#= link_to "Sign_up", :controller => "users", :action => "sign_up"%>
+
+<script>
+  $('.see_friend_list').click(function() {
+      var user = $(this).attr('id');
+      $.ajax({
+          type: "POST",
+          url: "/users/show_friend_list",
+          dataType: "html",
+          data: "user_id=" + user
+          beforeSend: function (xhr) {
+              xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+          },
+          success: function (data) {
+              jQuery('.show_friends').html(data);
+          }
+
+      });
+  })
+</script>

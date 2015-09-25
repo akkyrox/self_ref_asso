@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1585388932">
+    <data-source source="LOCAL" name="Rails self_reference_asso: development" uuid="59b79265-98ea-4c84-9c24-db14b0c89987">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:self_reference_asso_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails self_reference_asso: test" uuid="bc36193a-eaa5-40f8-910e-273ab6a3e9a8">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:self_reference_asso_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails self_reference_asso: production" uuid="b58ec82a-efbb-45f7-9c02-93dcb7112317">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:self_reference_asso_production</jdbc-url>
+      <user-name>self_reference_asso</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dfefdfe6dfecdff5dff8dfefdfecdfefdff8dfefdfe4dfe9dfefdff5dfebdff9dff9dfe5dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
