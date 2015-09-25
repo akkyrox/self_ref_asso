@@ -4,7 +4,12 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-def sign_up
+  def show_friend_list
+    debugger
+    @user = User.find(params[:user_id])
+  end
 
-end
+  def sign_up
+
+  end
 end
